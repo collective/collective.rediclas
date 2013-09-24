@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="collective.rediclas">
+    <!-- -*- extra stuff goes here -*- -->
+
+    <browser:page
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="rediclas-stopwords.html"
+        class=".stopwords.Stopwords"
+        permission="cmf.ManagePortal" />
+
+    <include package="Products.CMFCore" file="permissions.zcml" />
+
+    <browser:page
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="rediclas-settings.html"
+        class=".settings.Settings"
+        permission="cmf.ManagePortal" />
+
+
+
+
+</configure>
