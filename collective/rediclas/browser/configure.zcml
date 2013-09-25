@@ -5,6 +5,13 @@
     <!-- -*- extra stuff goes here -*- -->
 
     <browser:page
+        for="*"
+        name="rediclas-train.html"
+        class=".train.Train"
+        permission="cmf.ModifyPortalContent" />
+
+
+    <browser:page
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         name="rediclas-stopwords.html"
         class=".stopwords.Stopwords"

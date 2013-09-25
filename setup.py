@@ -26,7 +26,7 @@ setup(name='collective.rediclas',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          #'redisbayes',
+          'redisbayes',
       ],
       entry_points="""
       # -*- Entry points: -*-
