@@ -123,5 +123,4 @@ class RedisService(object):
 
     def classify(self, text):
         scores = self.redis_bayes.score(text)
-        #xxx
-        return scores
+        return sorted(scores.iteritems(), key=lambda v:v[1], reverse=True)

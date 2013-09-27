@@ -4,6 +4,16 @@
            i18n_domain="collective.rediclas">
     <!-- -*- extra stuff goes here -*- -->
 
+  <browser:page
+      for="*"
+      name="rediclas-classify.html"
+      class=".classifyview.ClassifyView"
+      template="classifyview.pt"
+      allowed_interface=".classifyview.IClassifyView"
+      permission="zope.Public"
+      />
+
+
     <browser:page
         for="*"
         name="rediclas-train.html"
